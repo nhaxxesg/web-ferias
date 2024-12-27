@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferias Gastronómicas Cusco</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.imgur.com/XYZ123.png" alt="Logo Ferias Cusco">
+                <h1>Ferias Gastronómicas Cusco</h1>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#ferias">Ferias Disponibles</a></li>
+                <li><a href="#registro">Registrar Evento</a></li>
+                <li><a href="#mapa">Mapa de Ferias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Descubre la Riqueza Gastronómica del Cusco</h2>
+            <p>Explora las mejores ferias gastronómicas de la región</p>
+        </section>
+
+        <section id="ferias" class="ferias-container">
+            <h2>Ferias Disponibles</h2>
+            <div class="ferias-grid" id="feriasGrid"></div>
+        </section>
+
+        <section id="registro" class="registro-container">
+            <h2>Registrar Nueva Feria</h2>
+            <form id="registroFeria">
+                <input type="text" placeholder="Nombre de la Feria" required>
+                <input type="date" placeholder="Fecha" required>
+                <input type="text" placeholder="Ubicación" required>
+                <textarea placeholder="Descripción" required></textarea>
+                <input type="file" accept="image/*">
+                <button type="submit">Registrar Feria</button>
+            </form>
+        </section>
+
+        <section id="mapa" class="mapa-container">
+            <h2>Mapa de Ferias</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Ferias Gastronómicas Cusco - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html> 
